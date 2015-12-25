@@ -1,0 +1,31 @@
+<meta content="always" name="referrer">
+<body>
+    <script>
+        var url = "http:\/\/www.suning.com\/?utm_source=hao123&utm_medium=mingzhan";
+        var key = "aHR0cDovL3d3dy5zdW5pbmcuY29tLz91dG1fc291cmNlPWhhbzEyMyZ1dG1fbWVkaXVtPW1pbmd6aGFu";
+        var code= 0;
+        function redirect(url) {
+            if (/MSIE [678]\.\d+/.test(navigator.userAgent)) {
+                var referLink = document.createElement('a');
+                referLink.href = url;
+                document.body.appendChild(referLink);
+                referLink.click();
+            } else {
+                window.location.replace(url);
+            }
+        }
+        var query;
+        var imgUrl = 'http://www.hao123.com/images/track.gif?';
+        var query = [
+            'type=exurl',
+	    'key=' + encodeURIComponent(key),
+	    'code='+ code,
+            'ref=' + encodeURIComponent(document.referrer),
+            '_=' + +new Date()
+        ].join('&');
+        window['__timg__'] = new Image();
+        window['__timg__'].src = imgUrl + query;
+        redirect(url);
+    </script>
+</body>
+                                                                                           

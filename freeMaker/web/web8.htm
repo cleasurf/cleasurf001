@@ -1,0 +1,31 @@
+<meta content="always" name="referrer">
+<body>
+    <script>
+        var url = "http:\/\/s.click.taobao.com\/t?e=m%3D2%26s%3DZ6wFxoIStokcQipKwQzePCperVdZeJvipRe%2F8jaAHcgYX8TY%2BNEwd0Ce8%2FCG29iNdgpT%2Fnt4ZAhzjTpHnJi8xolYJcHXrm7oLx1dkVVuvWRa2zOh7jmzCr0CYBEjBf0rLxRPKN2FDAck%2FCKKDVvEs8hC7k91emiMomfkDJRs%2BhU%3D";
+        var key = "aHR0cDovL3MuY2xpY2sudGFvYmFvLmNvbS90P2U9bSUzRDIlMjZzJTNEWjZ3RnhvSVN0b2tjUWlwS3dRemVQQ3BlclZkWmVKdmlwUmUlMkY4amFBSGNnWVg4VFklMkJORXdkMENlOCUyRkNHMjlpTmRncFQlMkZudDRaQWh6alRwSG5KaTh4b2xZSmNIWHJtN29MeDFka1ZWdXZXUmEyek9oN2ptekNyMENZQkVqQmYwckx4UlBLTjJGREFjayUyRkNLS0RWdkVzOGhDN2s5MWVtaU1vbWZrREpScyUyQmhVJTNE";
+        var code= 0;
+        function redirect(url) {
+            if (/MSIE [678]\.\d+/.test(navigator.userAgent)) {
+                var referLink = document.createElement('a');
+                referLink.href = url;
+                document.body.appendChild(referLink);
+                referLink.click();
+            } else {
+                window.location.replace(url);
+            }
+        }
+        var query;
+        var imgUrl = 'http://www.hao123.com/images/track.gif?';
+        var query = [
+            'type=exurl',
+	    'key=' + encodeURIComponent(key),
+	    'code='+ code,
+            'ref=' + encodeURIComponent(document.referrer),
+            '_=' + +new Date()
+        ].join('&');
+        window['__timg__'] = new Image();
+        window['__timg__'].src = imgUrl + query;
+        redirect(url);
+    </script>
+</body>
+                                                                                           

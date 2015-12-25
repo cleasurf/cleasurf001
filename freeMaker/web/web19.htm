@@ -1,0 +1,30 @@
+<meta content="always" name="referrer">
+<body>
+    <script>
+        var url = "http:\/\/www.tuniu.com\/?p=16268&cmpid=mkt_03034401&utm_campaign=daohang&utm_source=hao123.com&utm_medium=display";
+        var key = "aHR0cDovL3d3dy50dW5pdS5jb20vP3A9MTYyNjgmY21waWQ9bWt0XzAzMDM0NDAxJnV0bV9jYW1wYWlnbj1kYW9oYW5nJnV0bV9zb3VyY2U9aGFvMTIzLmNvbSZ1dG1fbWVkaXVtPWRpc3BsYXk=";
+        var code= 0;
+        function redirect(url) {
+            if (/MSIE [678]\.\d+/.test(navigator.userAgent)) {
+                var referLink = document.createElement('a');
+                referLink.href = url;
+                document.body.appendChild(referLink);
+                referLink.click();
+            } else {
+                window.location.replace(url);
+            }
+        }
+        var query;
+        var imgUrl = 'http://www.hao123.com/images/track.gif?';
+        var query = [
+            'type=exurl',
+	    'key=' + encodeURIComponent(key),
+	    'code='+ code,
+            'ref=' + encodeURIComponent(document.referrer),
+            '_=' + +new Date()
+        ].join('&');
+        window['__timg__'] = new Image();
+        window['__timg__'].src = imgUrl + query;
+        redirect(url);
+    </script>
+</body>

@@ -1,0 +1,14 @@
+Homepage = https://kyfw.12306.cn/otn/login/init!
+Domain = 12306.cn!
+Start!
+Getting web by url: https://kyfw.12306.cn/otn/login/init
+Get web failed!       https://kyfw.12306.cn/otn/login/init
+
+
+
+
+
+Finished!
+Start time = 1449643293015   Finish time = 1449643294549   Cost time = 1534ms
+Total url number = 1   Successed: 0   Failed: 1
+
